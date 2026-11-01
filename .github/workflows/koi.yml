@@ -15,47 +15,18 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Generate Koi - Black
+      - name: Generate first koi and setup tool
         uses: yalongwastaken/git-koi@v1
         with:
           login: ${{ github.repository_owner }}
           body: 'black'
           output-dir: 'koi/black'
 
-      - name: Generate Koi - Asagi
-        uses: yalongwastaken/git-koi@v1
-        with:
-          login: ${{ github.repository_owner }}
-          body: 'asagi'
-          output-dir: 'koi/asagi'
-
-      - name: Generate Koi - Platinum
-        uses: yalongwastaken/git-koi@v1
-        with:
-          login: ${{ github.repository_owner }}
-          body: 'platinum'
-          output-dir: 'koi/platinum'
-
-      - name: Generate Koi - White
-        uses: yalongwastaken/git-koi@v1
-        with:
-          login: ${{ github.repository_owner }}
-          body: 'white'
-          output-dir: 'koi/white'
-
-      - name: Generate Koi - Tea
-        uses: yalongwastaken/git-koi@v1
-        with:
-          login: ${{ github.repository_owner }}
-          body: 'tea'
-          output-dir: 'koi/tea'
-
-      - name: Generate Koi - Gold
-        uses: yalongwastaken/git-koi@v1
-        with:
-          login: ${{ github.repository_owner }}
-          body: 'gold'
-          output-dir: 'koi/gold'
+      - name: Generate all other varieties
+        run: |
+          for body in asagi platinum white tea gold; do
+            git-koi render "$RUNNER_TEMP/koi-snapshot.json" --output-dir "koi/$body" --body "$body"
+          done
 
       - name: Commit updated koi if changed
         run: |
