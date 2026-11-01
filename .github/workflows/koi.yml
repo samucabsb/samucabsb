@@ -15,16 +15,51 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Generate Git Koi
+      - name: Generate Koi - Black
         uses: yalongwastaken/git-koi@v1
         with:
           login: ${{ github.repository_owner }}
-          body: 'black' # Opções: white, black, asagi, tea, gold, platinum
-          output-dir: 'koi'
+          body: 'black'
+          output-dir: 'koi/black'
+
+      - name: Generate Koi - Asagi
+        uses: yalongwastaken/git-koi@v1
+        with:
+          login: ${{ github.repository_owner }}
+          body: 'asagi'
+          output-dir: 'koi/asagi'
+
+      - name: Generate Koi - Platinum
+        uses: yalongwastaken/git-koi@v1
+        with:
+          login: ${{ github.repository_owner }}
+          body: 'platinum'
+          output-dir: 'koi/platinum'
+
+      - name: Generate Koi - White
+        uses: yalongwastaken/git-koi@v1
+        with:
+          login: ${{ github.repository_owner }}
+          body: 'white'
+          output-dir: 'koi/white'
+
+      - name: Generate Koi - Tea
+        uses: yalongwastaken/git-koi@v1
+        with:
+          login: ${{ github.repository_owner }}
+          body: 'tea'
+          output-dir: 'koi/tea'
+
+      - name: Generate Koi - Gold
+        uses: yalongwastaken/git-koi@v1
+        with:
+          login: ${{ github.repository_owner }}
+          body: 'gold'
+          output-dir: 'koi/gold'
 
       - name: Commit updated koi if changed
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add koi/
-          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: tend the koi" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: tend the koi (all varieties)" && git push)
