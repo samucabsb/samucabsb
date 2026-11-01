@@ -19,7 +19,7 @@ jobs:
         uses: yalongwastaken/git-koi@v1
         with:
           login: ${{ github.repository_owner }}
-          body: 'asagi' # Opções: white, black, asagi, tea, gold, platinum
+          body: 'black' # Opções: white, black, asagi, tea, gold, platinum
           output-dir: 'koi'
 
       - name: Commit updated koi if changed
