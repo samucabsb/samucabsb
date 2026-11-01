@@ -59,7 +59,6 @@ core_focus: ["Semantic RAG", "ChromaDB", "FastAPI Microservices", "AI Agents & M
 
 <div align="center">
   <img src="koi/white/koi.gif" width="256" alt="Samuel's Git Koi" /><br/>
-  <sub>🐟 <a href="KOI_PREVIEW.md">Clique aqui para ver todas as 6 variações geradas</a></sub>
 </div>
 
 <picture>
