@@ -57,6 +57,10 @@ core_focus: ["Semantic RAG", "ChromaDB", "FastAPI Microservices", "AI Agents & M
 
 ### `// CONTRIBUTION TELEMETRY`
 
+<div align="center">
+  <img src="koi/koi.gif" width="256" alt="Samuel's Git Koi" />
+</div>
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/samucabsb/samucabsb/output/github-contribution-grid-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/samucabsb/samucabsb/output/github-contribution-grid-snake.svg" />
