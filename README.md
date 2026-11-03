@@ -13,7 +13,7 @@
 
 ### `// SYSTEM OVERVIEW`
 
-Desenvolvedor de Software e Engenheiro de IA com graduação em **Análise e Desenvolvimento de Sistemas** (**média 9,3/10** • premiado como **Melhor Aluno por 3 semestres consecutivos**) e residente em Inteligência Artificial pelo **Instituto de Pesquisas ELDORADO** em parceria com a **Universidade de Brasília (UnB — Lab Livre Gama / PBIA / MCTI)**.
+Desenvolvedor de Software e Engenheiro de IA com graduação em **Análise e Desenvolvimento de Sistemas** (**média 9,3/10**) e residente em Inteligência Artificial pelo **Instituto de Pesquisas ELDORADO** em parceria com a **Universidade de Brasília (UnB — Lab Livre Gama / PBIA / MCTI)**.
 
 ```yaml
 location: "Brasília, DF (Presencial / Híbrido / Remoto)"
