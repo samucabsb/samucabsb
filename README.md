@@ -33,7 +33,7 @@ core_focus: ["Semantic RAG", "ChromaDB", "FastAPI Microservices", "AI Agents & M
 | ID | Projeto | Arquitetura & Stack | Métricas & Entregas |
 | :--- | :--- | :--- | :--- |
 | **`/01`** | **[SUSANNA-Healthcheck](https://github.com/Andre-Atlas/SUSANNA-HEALTHCHECK)** | `Python` `FastAPI` `ChromaDB` `RAG` `Docker` `MLflow` | Assistente para **383 UBSs** no SUS-DF, **237 testes automatizados**, curadoria de corpus, guardrails clínicos e zero PII (LGPD). |
-| **`/02`** | **[Checkpoint Engine](https://github.com/samucabsb/uni-project-checkpoint)** | `TypeScript` `Node.js` `Express` `Prisma` `PostgreSQL` `React` | Plataforma social gamer com **fila persistente em banco**, worker isolado para concorrência e autenticação JWT. |
+| **`/02`** | **[Spotify Mood Playlist](https://github.com/samucabsb/spotify-mood-playlist.git)** | `Python` `Scikit-Learn` `Flask` `Three.js` `YouTube API` `OAuth 2.0` | Motor de playlists por *mood* com **mixagem harmônica (Roda de Camelot)**, calibração acústica externa, sequenciamento TSP e interface 3D. |
 | **`/03`** | **[Interactive Portfolio](https://samucabsb.github.io/)** | `HTML5` `Canvas 2D` `GitHub Actions CI/CD` | Motor matemático de campo vetorial a **120–240 FPS** (`2 draw calls/frame`, `39KB` single-file). |
 
 ---
